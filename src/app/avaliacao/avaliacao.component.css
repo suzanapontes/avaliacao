@@ -1,0 +1,158 @@
+/* Arquivo CSS: relatorio.css */
+
+/* Container principal */
+
+.form-container {
+    margin-bottom: 40px;
+}
+
+.relatorio-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 0rem;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.relatorio-conteudo {
+    padding: 2rem;
+}
+
+/* Logo centralizada */
+.logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Título com bordas superior e inferior e fundo verde */
+.titulo-relatorio {
+    border-top: 3px solid #FFF3CF;
+    border-bottom: 3px solid #FFF3CF;
+    background-color: #004747;
+    padding: 10px;
+    color: #FFF3CF;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Nome e data com borda separando */
+.info-container {
+    display: flex;
+    /* Exibe os itens na horizontal */
+    justify-content: space-between;
+    /* Coloca os itens nas extremidades */
+    border-bottom: 2px solid #000;
+    /* Borda inferior para o container */
+    padding: 10px 0;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    /* Os itens (titulo e subtitulo) ficam empilhados */
+    align-items: center;
+    width: 45%;
+    /* Cada coluna ocupa 45% da largura do container */
+    padding: 0 20px;
+    /* Adiciona espaçamento interno */
+    border-right: 2px solid #000;
+    /* Borda no meio */
+}
+
+.info-item:last-child {
+    border-right: none;
+    /* Remove a borda do último item */
+}
+
+.titulo {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.subtitulo {
+    margin: 1px 0 0 0;
+    font-size: 1em;
+}
+
+
+/* Container para gráfico e informações */
+.grafico-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centralizar e redimensionar o gráfico */
+.grafico-centralizado {
+    width: 80%;
+    /* Aumente o tamanho do gráfico */
+    max-width: 400px;
+    /* Limite máximo para evitar que fique grande demais */
+}
+
+apx-chart {
+    width: 60%;
+    height: 60%;
+    /* Ajusta a altura automaticamente com base na largura */
+}
+
+/* Detalhes adicionais */
+.detalhes-adicionais {
+    margin-top: 10px;
+}
+
+.detalhes-adicionais ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.detalhes-adicionais li {
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 100%;
+    /* Aumenta o tamanho da logo para 100% do tamanho do elemento pai */
+    max-width: 400px;
+    /* Define o tamanho máximo da logo (ajuste conforme necessário) */
+    height: auto;
+    /* Mantém a proporção da logo ao aumentar */
+}
+
+.aviso {
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+
+/* status-item.component.css */
+
+.status-items-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha quando necessário */
+    gap: 20px; /* Adiciona um pequeno espaçamento entre os itens */
+  }
+  
+  .status-item {
+    flex: 1 0 30%;  /* Cada item ocupa cerca de 30% da largura do contêiner */
+    box-sizing: border-box; /* Garante que padding e bordas não afetem o cálculo de largura */
+    margin-bottom: 15px; /* Espaço entre as linhas de itens */
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  

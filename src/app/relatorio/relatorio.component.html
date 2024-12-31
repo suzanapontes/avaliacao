@@ -1,0 +1,39 @@
+<div class="relatorio-container">
+    <!-- Topo com Logo e Informações do Paciente -->
+    <div class="topo">
+        <img src="assets/logo.png" alt="Logo" class="logo"> <!-- Logo -->
+        <div class="informacoes-paciente">
+            <h1>Relatório de Avaliação Corporal</h1>
+            <p><strong>Nome:</strong> {{ data.pacienteNome }}</p>
+            <p><strong>Data de Nascimento:</strong> {{ data.pacienteDataNascimento }}</p>
+            <p><strong>Data da Avaliação:</strong> {{ data.dataAtual }}</p>
+        </div>
+    </div>
+
+    <!-- Seção com o Gráfico e os Valores -->
+    <div class="grafico-secao">
+        <div class="grafico-container">
+            <canvas id="chart" width="400" height="400"></canvas> <!-- Gráfico de Pizza -->
+        </div>
+        <div class="valores-container">
+            <h2>Distribuição Corporal</h2>
+            <p><strong>Peso:</strong> {{ data.peso }} kg</p>
+            <p><strong>Água:</strong> {{ data.agua }} %</p>
+            <p><strong>Proteína:</strong> {{ data.proteina }} %</p>
+            <p><strong>Gordura:</strong> {{ data.gordura }} %</p>
+            <p><strong>Massa Óssea:</strong> {{ data.massaOssea }} %</p>
+        </div>
+    </div>
+
+    <!-- Lista de Dados do Paciente -->
+    <div class="pontos-paciente">
+        <h3>Pontos de Avaliação</h3>
+        <ul>
+            <li><strong>IMC:</strong> {{ data.imc }}</li>
+            <li><strong>Peso Ideal:</strong> {{ data.pesoIdeal }} kg</li>
+            <li><strong>Pregas Cutâneas:</strong> {{ data.pregasCutaneas }}</li>
+        </ul>
+    </div>
+
+    <button mat-raised-button color="primary" (click)="gerarPDF()">Gerar PDF</button>
+</div>

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'avaliacao';
+
+  dadosPaciente: any = null;
+
+  receberDados(dados: any) {
+    this.dadosPaciente = dados;
+  }
 }

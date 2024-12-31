@@ -1,0 +1,59 @@
+/* Relatório Container */
+.relatorio-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .informacoes-paciente {
+    text-align: right;
+  }
+  
+  .grafico-secao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .grafico-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .valores-container {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .valores-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .pontos-paciente {
+    margin-top: 30px;
+  }
+  
+  .pontos-paciente ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pontos-paciente li {
+    margin-bottom: 10px;
+  }
+  

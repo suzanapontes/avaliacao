@@ -1,0 +1,53 @@
+.status-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: #ffffff00;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.status-icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #000;
+  width: 30px;
+  height: 30px;
+}
+
+.status-icone i {
+  font-size: 2rem;
+}
+
+.status-descricao {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.status-flag {
+  margin-top: 0.25rem;
+  padding: 0.2rem 0.5rem;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  color: #000;
+  font-size: 0.8rem;
+  border-radius: 12px;
+}
+
+.status-valor {
+  font-weight: bold;
+  text-align: right;
+  width: 100px;
+  margin-left: auto;
+}
