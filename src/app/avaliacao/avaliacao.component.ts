@@ -205,7 +205,7 @@ export class AvaliacaoComponent implements AfterViewInit {
   async gerarPdf(): Promise<void> {
     this.data.dataGeracao = new Date();
     this.createChart();
-    await this.sleep(1000);
+    await this.sleep(1500);
     const options = {
       margin: 1,
       filename: 'relatorio_paciente.pdf',

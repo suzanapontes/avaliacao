@@ -21,4 +21,18 @@ export class StatusListComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  getDescricao(item: any) {
+    const descricao = `${item.valor} ${item.valorDesc}`;
+    const index = this.items.indexOf(item);
+    if(index == 2 || index == 3) {
+      const total = Number(this.items[2].valor) + Number(this.items[3].valor);      
+        if (total > 0) { 
+            const percentual = (item.valor / total) * 100;            
+            return `${descricao} ${percentual.toFixed(2)}%`;
+        }
+        return `${descricao} -%`;
+    }
+    return descricao;
+  }
+
 }
