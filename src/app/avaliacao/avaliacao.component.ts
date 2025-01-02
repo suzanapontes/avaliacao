@@ -29,9 +29,11 @@ export class AvaliacaoComponent implements AfterViewInit {
   flagStatusList = [
     { descricao: 'Ligeiramente Alto', value: FlagStatus.LigeiramenteAlto },
     { descricao: 'Obeso', value: FlagStatus.Obeso },
-    { descricao: 'Média', value: FlagStatus.Media },
+    { descricao: 'Média', value: FlagStatus.Media },    
     { descricao: 'Baixo', value: FlagStatus.Baixo },
-    { descricao: 'Alto', value: FlagStatus.Alto }
+    { descricao: 'Baixo Amarelo', value: FlagStatus.BaixoAmarelo },
+    { descricao: 'Alto', value: FlagStatus.Alto },
+    { descricao: 'Alto Verde', value: FlagStatus.AltoVerde }
   ];
 
   data = {
@@ -80,7 +82,7 @@ export class AvaliacaoComponent implements AfterViewInit {
       descricao: 'Água Corporal',
       flagStatus: FlagStatus.Media,
       valor: 0,
-      valorDesc: 'Kg'
+      valorDesc: '%'
     },
     {
       icone: 'femur_alt',
@@ -101,7 +103,7 @@ export class AvaliacaoComponent implements AfterViewInit {
       descricao: 'Gordura subcutânea',
       flagStatus: FlagStatus.Media,
       valor: 0,
-      valorDesc: 'Kg'
+      valorDesc: '%'
     }
   ];
 
